@@ -1,0 +1,138 @@
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a,
+p {
+  font-weight: 400;
+}
+h6 {
+  font-size: 18px;
+  line-height: 150%;
+}
+h5 {
+  font-size: 24px;
+  line-height: 130%;
+}
+h4 {
+  font-size: 32px;
+  line-height: 120%;
+}
+h3 {
+  font-size: 40px;
+  line-height: 115%;
+}
+h2 {
+  font-size: 72px;
+  line-height: 110%;
+}
+h1 {
+  font-size: 92px;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 56px;
+  }
+}
+
+a {
+  color: $white-main;
+  text-decoration: none;
+}
+.link {
+  display: inline-block;
+  padding: 8px 24px;
+  font-size: 24px;
+  transition: 0.2s;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transform: translate(20%, -50%);
+    transition: 0.5s ease;
+    background-color: $white-main;
+  }
+
+  &:hover {
+    opacity: 0.8;
+
+    &::after {
+      width: 70%;
+    }
+  }
+}
+
+.mask {
+  background: linear-gradient(225deg, $green-light 0%, $green-main 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  i {
+    font-size: 36px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.square {
+  display: inline-block;
+  margin-top: 64px;
+  font-size: 24px;
+  padding: 16px 24px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 120px;
+    height: 120px;
+    transform: translate(-9.5%, -25%) rotate(45deg);
+    background: linear-gradient(225deg, $green-light 0%, $green-main 100%);
+    border-radius: 4px;
+    transition: 0.5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: translate(-9.5%, -25%) rotate(90deg);
+    }
+  }
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .footer-links {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+
+    .footer-link {
+      font-size: 50px;
+    }
+  }
+}
