@@ -167,7 +167,7 @@
     }
 
     i {
-      font-size: 80px;
+      font-size: 100px;
     }
   }
 }
@@ -175,5 +175,106 @@
 @media screen and (max-width: 750px) {
   .about-items {
     flex-direction: column;
+  }
+
+  .items-wrap {
+    div {
+      a {
+        i {
+          font-size: 80px;
+        }
+      }
+    }
+  }
+
+  .about {
+    .about-items {
+      img {
+        width: 200px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .get {
+    h3 {
+      font-size: 34px;
+    }
+  }
+  .content {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+  }
+  .technologies {
+    .items-wrap {
+      i {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .get {
+    h3 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 337px) {
+  .get {
+    h3 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 317px) {
+  .get {
+    h3 {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .get {
+    h2 {
+      font-size: 34px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+  }
+  .technologies {
+    h2 {
+      font-size: 34px;
+    }
+  }
+  .about {
+    h2 {
+      font-size: 34px;
+    }
+  }
+  .list-item {
+    h2 {
+      font-size: 34px;
+    }
+    h3 {
+      font-size: 34px;
+    }
+  }
+  .footer-links {
+    i {
+      font-size: 30px;
+      margin-top: 0;
+    }
   }
 }
