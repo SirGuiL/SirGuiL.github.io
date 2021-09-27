@@ -1097,4 +1097,30 @@ body {
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #24e500;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #80fd75;
+}
+
+::-moz-selection {
+  background: #15b200;
+  color: #fff;
+}
+
+::selection {
+  background: #15b200;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

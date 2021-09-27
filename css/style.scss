@@ -15,3 +15,24 @@ body {
   color: $white-main;
   font-family: "Barlow Condensed", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $green-main;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $green-light;
+}
+
+::selection {
+  background: $green-semi-bold;
+  color: $white-main;
+}
