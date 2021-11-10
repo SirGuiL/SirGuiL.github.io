@@ -252,7 +252,8 @@
             <h1>Guilherme Lima</h1>
           </div>
           <div>
-            <h2 class="mask mt-1">Web Developer</h2>
+            <!-- <h2 class="mask mt-1">Web Developer</h2> -->
+            <h2 class="mask mt-1"><span class="auto-typed"></span></h2>
           </div>
           <div class="flex-end">
             <a
@@ -431,7 +432,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         var tl = gsap.timeline();
@@ -539,6 +540,13 @@
             trigger: "#section-03",
           },
         });
+      });
+
+      let typed = new Typed(".auto-typed", {
+        strings: ["Front-end", "Back-end", "Web Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
       });
     </script>
   </body>
